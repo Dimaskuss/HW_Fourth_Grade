@@ -19,7 +19,7 @@ public class Main {
 
         findMinMax(
                 stream,
-                (x, y) -> x.compareTo(y),
+                Integer::compareTo,
                 (x, y) -> System.out.println(String.format("min: %s, max: %s", x, y))
         );
 
